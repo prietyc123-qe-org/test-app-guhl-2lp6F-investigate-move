@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-afqs
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pkumari_org/build-e2e-ekal-tenant/test-app-guhl/devfile-sample-python-basic-afqs@sha256:47e6b8423424650c05b6d336c1eed27732a40d36d00ad711744240e07872413d
+        name: my-python
+        resources: {}
+status: {}
